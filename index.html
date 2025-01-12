@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noob's Funny Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Oswald:wght@200..700&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d976757dc6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="images/style.css">
+    <link rel="icon" type="image/png" href="images/badge.png">
+    <style>
+        body {
+            margin: 0px;
+        }
+        main {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-family: Oswald;
+            font-style: bold;
+            font-style: italic;
+            font-size: 120px;
+            margin: 0;
+            background-image: url('images/6412173.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar {
+            top: 0;
+            position: sticky;
+        }
+        .navbar ul {
+            list-style-type: none;
+            background-color: hsl(0, 0%, 25%);
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            border-bottom: 3px solid;
+            border-top: 2px solid;
+        }
+        .fa-solid.fa-plus.fa-2x {
+            color: white;
+            font-size: 1.5em;
+            transition: transform 2s ease-in-out;
+        }
+        .fa-solid.fa-minus.fa-2x {
+            color: white;
+            font-size: 1.5em;
+            display: none;
+        }
+        .navbar a, .navbar button {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+            height: 100%;
+        }
+        .navbar a:hover, .navbar button:hover {
+            background-color: hsl(0, 0%, 10%);
+        }
+        .navbar li {
+            float: left;
+        }
+        .dropdown button {
+            background-color: hsl(0, 0%, 25%);
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .dropdown:hover .content {
+            display: block;
+        }
+        .dropdown:hover .fa-plus {
+            display: none;
+        }
+        .dropdown:hover .fa-minus {
+            display: inline;
+        }
+        .dropdown .content {
+            display: none;
+            position: absolute;
+            background-color: hsl(0, 0%, 90%);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            border-right: 2px solid hsl(0, 0%, 40%);
+        }
+        .dropdown .content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            color: black;
+            border-bottom: 2px solid hsl(0, 0%, 40%);
+            border-radius: 10px;
+        }
+        .dropdown .content a:hover {
+            background-color: hsl(0, 0%, 90%);
+        }
+        .img-container {
+            float: right;
+            text-align: center;
+            margin-left: 20px;
+            border-left: 3px solid hsl(241, 100%, 78%);
+            border-bottom: 3px solid  hsl(241, 100%, 78%);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        #img1 {
+            height: 210px;
+            display: block;
+        }
+        .imgdescs {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        #box1, #box2 {
+            border-top: 3px solid  hsl(241, 100%, 78%);
+            border-bottom: 3px solid  hsl(241, 100%, 78%);
+            border-radius: 10px;
+            text-align: center;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        #box2 {
+            padding-bottom: 0px;
+        }
+        #blocks {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #imgpeak{
+            float: right;
+        }
+        footer {
+            display: block;
+            clear: both;
+            background-color: hsl(184, 36%, 82%);
+            padding: 25px;
+            border-top: 5px solid hsl(0, 0%, 59%);
+            padding: 20px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Noob's</h1>
+
+    <nav class="navbar">
+        <div>
+            <ul>
+                <li class="dropdown">
+                    <button>
+                        <i class="fa-solid fa-plus fa-2x"></i>
+                        <i class="fa-solid fa-minus fa-2x"></i>
+                    </button>
+                    <div class="content">
+                        <a href="#">Profile</a>
+                        <a href="#">Info</a>
+                        <a href="#">Settings</a>
+                    </div>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <!--Change-->
+        <h2>This is the Home page</h2>
+        <p>I didn't know what to type here, so here are some goofy images and videos, I guess.</p>
+        <div class="img-container">
+            <img id="img1" src="images\RobloxScreenShot20241231_184152097.png" alt="notoriety img">
+            <p class="imgdescs">"No witnesses" ahh screenshot :pray:</p>
+            <video height="200" controls autoplay muted loop>
+                <source src="images/roblod-fight.mp4" type="video/mp4" >
+            </video>
+            <p class="imgdescs">Most EPIC Roblod fight!! :fire:</p>
+            <video height="200" controls muted loop>
+                <source src="images\robloxapp-20240715-0104307.mp4" type="video/mp4" >
+            </video>
+            <p class="imgdescs">Uhhhh</p>
+            <img src="images\Noob at its peak.png" alt="peak" height="250px" id="imgpeak">
+            <p class="imgdescs">I was at my peak back than :fire:</p>
+        </div>
+        <p>Hmmmm, when you think about it, I think I should fill these places out!</p>
+        <p>Time to yap :fire:</p>
+        <div id="blocks">
+            <div id="box1">
+                <h2>Honorable Mentions</h2>
+                <audio controls>
+                    <source src="images\hellna (1).mp3">
+                </audio>
+            </div>
+            <div id="box2">
+                <h2>Honorable Mentions *The Sequel*</h2>
+                <img src="images\sun tzu.png" alt="quote1" height="300px">
+                <img src="images\sun tzu2.png" alt="quote2" height="300px">
+            </div>
+        </div>
+        <p>PEOPLE TELL ME THAT I HAVE A UNIQUE WAY OF LIGHTING UP A ROOM. IT'S CALLED ARSON AND THOSE PEOPLE ARE CALLED WITNESSES.</p>
+        <p>live, laugh, love. IF THAT DOESN'T WORK load, aim & fire.</p>
+        <p>When you can be anything you want, an asshole seems an odd choice.</p>
+        <p>My brain: Don't even say shit. Just let it go. It's not worth it. My Mouth: Listen here fucker.</p>
+        <p>Caution: When someone says get a grip, apparently around their neck is NOT what they meant.</p>
+        <p>The saying, "Say no to drugs" has always made me laugh. If you're talking to drugs, it's probably too late to say no to.</p>
+        <p>I TAKE SUPER HOT SHOWERS TO PRACTICE BURNING IN HELL.</p>
+        <p>PUT A CONDOM ON, DARLING. IF YOU'RE GOING TO ACT LIKE A DICK. YOU MIGHT AS WELL DRESS LIKE ONE.</p>
+        <p>SOME PEOPLE NEED A SHOCK COLLAR AND I NEED THE REMOTE.</p>
+        <p>THE TITANIC IS A GREAT EXAMPLE OF HOW "JUST THE TIP" CAN GET YOU IN A LOT OF TROUBLE</p>
+        <div>
+            Totally custom made glass button: <br><br>
+            <div class="glass-btn">Press</div>
+        </div>
+    </main>
+    <br><br><br><br>
+    <footer>
+        Author: im_noobv2<br>
+        &copy; Copyright Reserved<br>
+        <small><a href="mailto:noob.me.bruh2345@gmail.com">noob.me.bruh2345@gmail.com</a></small>
+    </footer>
+</body>
+</html>
